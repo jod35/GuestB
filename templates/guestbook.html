@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static',filename='guestbook.css')}}">
+
+    {% for comment in comments %}
+     <div class="jumbotron guestbook">
+     <h5>{{comment.name}}</h5>
+     <p>{{comment.Comment}}</p>
+     </div>
+    {% endfor %}
+
+{% endblock content %}

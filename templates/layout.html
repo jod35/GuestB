@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>
+     {% if title %}
+     GuestBook: {{title}}
+     {% else %}
+     GuestBook     
+     {% endif %}
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='bootstrap.min.css')}}">
+</head>
+<body>
+<div class="container">
+    <header class="jumbotron head">
+            
+            <h3>Guest Book: {{title}} </h3>
+            <li><a href="/">Home</a></li>
+            <li><a href="/signin">Sign In</a></li>
+            
+    </header>
+    <div class="content">
+        {% block content %}
+        {% endblock content %}
+    
+    <footer>
+       Ssali Jonathan &copy; 2019
+    </footer>
+
+    </div>
+</div>
+    
+    
+</body>
+</html>

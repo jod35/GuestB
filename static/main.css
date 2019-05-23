@@ -1,0 +1,19 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    text-align: center;
+}
+footer{
+    text-align: left;
+}
+header li{
+    display: inline;
+    justify-content: space-between;
+    padding: 30px;
+    text-align: center;
+}
+.head{
+    height: 20px;
+    text-align: center;
+}
